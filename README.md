@@ -1,19 +1,31 @@
-# PHYS227 HW 9
+# PHYS227 HW 10
 
 **Author:** _\<your name\>_
 
-[![Build Status](https://travis-ci.org/chapman-phys227-2016s/hw-9-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys227-2016s/hw-9-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-phys227-2016s/hw-10-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys227-2016s/hw-10-YOURNAME)
 
-**Due date:** 2016/04/21
+**Due date:** 2016/04/28
 
 ## Specification
 
-Complete the following exercises from the primary textbook, placing your solutions into separate files. In each file, write the solution as a callable function, so that you can write suitable test functions that demonstrate correct output using the nose framework. GitHub will automatically run your tests on every commit, indicating any failures via the Travis framework with build status above.
+Complete the following exercises, placing your solutions into separate files. In each file, write the solution as a callable function, so that you can write suitable test functions that demonstrate correct output using the nose framework. GitHub will automatically run your tests on every commit, indicating any failures via the Travis framework with build status above.
 
-1. Exercise 9.11 (```Backward2.py```) *Hint:* Read Section 9.2 carefully - it has many helpful ideas and useful code.
-1. Exercise 9.14 (```MCint_class.py```) *Hint:* Read Sections 8.5 and 9.3 carefully - they have many helpful ideas and useful code.
+1. Consider the coupled set of ODEs with initial conditions $u(0) = 1$, $v(0) = 0$:
+   
+   $$u'(t) = v(t)$$
+   $$v'(t) = -u(t)$$
+   
+   Show that the solution $u(t) = \cos(t)$ and $v(t) = -\sin(t)$ satisfies these equations. Explain what $u(t)$ and $v(t)$ could correspond to in a physical system.
+   
+1. Using Euler's method, solve the above equations from $t=0$ until $t= 5(2\pi)$ using $N$ time steps per period (so $\Delta t = 2\pi / N$). What is the smallest integer value of $N$ that produces the qualitatively correct behavior of the solution over the solution interval? For 3 different choices of $N$, plot your simulated solution as a solid line on top of the exact solution as a dashed line for both $u(t)$ and $v(t)$. Be sure to annotate your plot with title, legend for the curves, and proper axes labels. Export the plots to png files in addition to loading them into your notebook.
+   
+1. Repeat using Heun's method.
+   
+1. Repeat using the 2nd-order Runge Kutta method.
+   
+1. Repeat using the 4th-order Runge Kutta method.
 
-Finally, to cleanly present your work, create a Jupyter notebook ```hw9.ipynb``` that imports each of your python files as modules and demonstrates the functionality. The notebook should be formatted professionally using Markdown headings, including your name and a brief description of each homework section.
+Finally, to cleanly present your work, create a Jupyter notebook ```hw10.ipynb``` that imports each of your python files as modules and demonstrates the functionality. The notebook should be formatted professionally using Markdown headings, including your name and a brief description of each homework section.
 
 ## Assessment
 
