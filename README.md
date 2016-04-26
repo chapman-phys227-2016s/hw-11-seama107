@@ -1,31 +1,24 @@
-# PHYS227 HW 10
+# PHYS227 HW 11
 
 **Author:** _\<your name\>_
 
 [![Build Status](https://travis-ci.org/chapman-phys227-2016s/hw-10-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys227-2016s/hw-10-YOURNAME)
 
-**Due date:** 2016/04/28
+**Due date:** 2016/05/03
 
 ## Specification
 
 Complete the following exercises, placing your solutions into separate files. In each file, write the solution as a callable function, so that you can write suitable test functions that demonstrate correct output using the nose framework. GitHub will automatically run your tests on every commit, indicating any failures via the Travis framework with build status above.
 
-1. Consider the coupled set of ODEs with initial conditions $u(0) = 1$, $v(0) = 0$:
+1. Complete CW11 and use its module ```sombrero.py```.
    
-   $$u'(t) = v(t)$$
-   $$v'(t) = -u(t)$$
+1. For $F = 0.4$, create a high-resolution scatterplot of $(x(t),y(t))$ for the specific points $t = (\phi + n)2\pi$ for $\phi = 0$ and $n = 0,1,\ldots,1000$. Label your horizontal axis $x$ and your vertical axis $x'$. Plot your axes on a fixed scale $x\in[-1.5,1.5]$ and $y\in[-1.1,1.1]$.  Export the plot directly to a file ```frame00.png```.
    
-   Show that the solution $u(t) = \cos(t)$ and $v(t) = -\sin(t)$ satisfies these equations. Explain what $u(t)$ and $v(t)$ could correspond to in a physical system.
+1. Repeat the previous problem, but using $\phi = 0.01$, saving the file in ```frame01.png```. Repeat until $\phi = 0.99$ and ```frame99.png```. 
    
-1. Using Euler's method, solve the above equations from $t=0$ until $t= 5(2\pi)$ using $N$ time steps per period (so $\Delta t = 2\pi / N$). What is the smallest integer value of $N$ that produces the qualitatively correct behavior of the solution over the solution interval? For 3 different choices of $N$, plot your simulated solution as a solid line on top of the exact solution as a dashed line for both $u(t)$ and $v(t)$. Be sure to annotate your plot with title, legend for the curves, and proper axes labels. Export the plots to png files in addition to loading them into your notebook.
+1. Create an animated gif out of the previous 100 frames, using the ```convert``` commandline tool, as before.
    
-1. Repeat using Heun's method.
-   
-1. Repeat using the 2nd-order Runge Kutta method.
-   
-1. Repeat using the 4th-order Runge Kutta method.
-
-Finally, to cleanly present your work, create a Jupyter notebook ```hw10.ipynb``` that imports each of your python files as modules and demonstrates the functionality. The notebook should be formatted professionally using Markdown headings, including your name and a brief description of each homework section.
+Finally, to cleanly present your work, create a Jupyter notebook ```hw11.ipynb``` that loads your animated gif and explains what sort of phase-plane motion you observe from the dynamics as time evolves. The notebook should be formatted professionally using Markdown headings, including your name and a brief description of each homework section.
 
 ## Assessment
 
