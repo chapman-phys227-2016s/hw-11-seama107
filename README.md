@@ -2,7 +2,7 @@
 
 **Author:** _\<your name\>_
 
-[![Build Status](https://travis-ci.org/chapman-phys227-2016s/hw-10-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys227-2016s/hw-10-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-phys227-2016s/hw-11-seama107.svg?branch=master)](https://travis-ci.org/chapman-phys227-2016s/hw-11-seama107)
 
 **Due date:** 2016/05/03
 
@@ -22,7 +22,7 @@ Finally, to cleanly present your work, create a Jupyter notebook ```hw11.ipynb``
 
 ## Assessment
 
-_\<Analyze what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.\>_
+One of my favorite assignments. Who doesn't love making animated gifs? Also the sombrero potential well was beyond fascinating. Such simple rules gave rise so something so un-predictably complex.
 
 ## Honor Pledge
 
@@ -33,4 +33,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-_\<your name\>_
+Michael Seaman
